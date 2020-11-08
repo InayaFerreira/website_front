@@ -27,8 +27,8 @@ export default class Pedido extends Component {
                 <h1>Venda: R$ {pedido.venda} </h1>
                 <h1>Ingredientes:</h1>
                 <h4 id="ingredientes-color">{pedido.ingredientes}</h4>
-                <h1>quantidade disponível: {pedido.estoque} </h1>
-                <br />
+                <h1>Quantidade disponível: {pedido.estoque} </h1>
+                <br/>
                 <Link to={`/pedidos`}><button id="button">Voltar</button> </Link> 
             </div >
         );

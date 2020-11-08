@@ -10,8 +10,7 @@ ReactDOM.render(
                 <div id="header">
                   <h1>Seja Bem-Vindo ao Peaky's Burguers</h1>
                   <br></br>
-                  <h2>para continuar</h2>
-                  <h2>clique em um dos botões abaixo</h2>
+                  
                 </div>
                 <div id="select">
                   <a href="https://websitefront.herokuapp.com/pedidos"><button className="select_button">Produtos</button></a>
