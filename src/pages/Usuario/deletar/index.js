@@ -29,7 +29,7 @@ class DeletarUsuario extends Component {
     componentDidMount() {
         const { id } = this.props.match.params;
  
-        fetch(`https://lokky-back2.herokuapp.com/sistema/usuarios/${id}`)
+        fetch(`https://websiteback.herokuapp.com/sistema/usuarios/${id}`)
             .then(data => {
                 data.json().then(data => {
                     if (data.error) {
@@ -69,7 +69,7 @@ class DeletarUsuario extends Component {
     handleClick = event => {
         const { id } = this.props.match.params;
  
-        fetch(`https://lokky-back2.herokuapp.com/sistema/usuarios/${id}`, {
+        fetch(`https://websiteback.herokuapp.com/sistema/usuarios/${id}`, {
             method: "delete"
         })
             .then(data => {

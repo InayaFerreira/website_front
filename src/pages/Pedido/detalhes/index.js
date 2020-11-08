@@ -10,7 +10,7 @@ export default class Pedido extends Component {
     componentDidMount() {
         const { id } = this.props.match.params;
  
-        fetch(`https://lokky-back2.herokuapp.com/sistema/pedidos/${id}`)
+        fetch(`https://websiteback.herokuapp.com/sistema/pedidos/${id}`)
             .then(pedido =>
                 pedido.json().then(pedido => this.setState({ pedido }))
             )

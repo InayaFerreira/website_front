@@ -121,7 +121,7 @@ class CriarUsuario extends Component {
     };
  
     handleSubmit = event => {
-        fetch("https://lokky-back2.herokuapp.com/sistema/usuarios", {
+        fetch("https://websiteback.herokuapp.com/sistema/usuarios", {
             method: "post",
             body: JSON.stringify(this.state.usuario),
             headers: {
