@@ -44,7 +44,7 @@ class CriarCarrinho extends Component {
     }
 
     componentDidMount() {
-        fetch(`${process.env.REACT_APP_API_URL}/sistema/pedidos`)
+        fetch(`https://websiteback.herokuapp.com/sistema/pedidos`)
             .then(pedido =>
                 pedido.json().then(pedidos => this.setState({ pedidos }))
             )
@@ -137,7 +137,7 @@ class CriarCarrinho extends Component {
         if (nomePedidoPedidos != carrinho.nomePedido)
             return alert('Nome do pedido não existe.')
 
-        fetch("${process.env.REACT_APP_API_URL}/sistema/carrinhos", {
+        fetch("https://websiteback.herokuapp.com/sistema/carrinhos", {
             method: "post",
             body: JSON.stringify(carrinho),
             headers: {

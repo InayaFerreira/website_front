@@ -10,7 +10,7 @@ export default class Usuario extends Component {
     componentDidMount() {
         const { id } = this.props.match.params;
  
-        fetch(`${process.env.REACT_APP_API_URL}/sistema/usuarios/${id}`)
+        fetch(`https://websiteback.herokuapp.com/sistema/usuarios/${id}`)
             .then(usuario =>
                 usuario.json().then(usuario => this.setState({ usuario }))
             )

@@ -121,7 +121,7 @@ class CriarUsuario extends Component {
     };
  
     handleSubmit = event => {
-        fetch("${process.env.REACT_APP_API_URL}/sistema/usuarios", {
+        fetch("https://websiteback.herokuapp.com/sistema/usuarios", {
             method: "post",
             body: JSON.stringify(this.state.usuario),
             headers: {
