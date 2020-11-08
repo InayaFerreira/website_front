@@ -14,7 +14,7 @@ export default class Main extends Component {
     }
  
     componentDidMount() {
-        fetch(`${process.env.REACT_APP_API_URL}/sistema/carrinhos`)
+        fetch(`https://websiteback.herokuapp.com/sistema/carrinhos`)
             .then(carrinho =>
                 carrinho.json().then(carrinho => this.setState({ carrinho }))
             )
