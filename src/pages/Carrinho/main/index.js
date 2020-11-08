@@ -14,7 +14,7 @@ export default class Main extends Component {
     }
  
     componentDidMount() {
-        fetch(`https://websiteback.herokuapp.com/sistema/carrinhos`)
+        fetch(`https://lokky-back2.herokuapp.com/sistema/carrinhos`)
             .then(carrinho =>
                 carrinho.json().then(carrinho => this.setState({ carrinho }))
             )

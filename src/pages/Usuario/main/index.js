@@ -14,7 +14,7 @@ export default class Main extends Component {
     }
  
     componentDidMount() {
-        fetch(`https://websiteback.herokuapp.com/sistema/usuarios`)
+        fetch(`https://lokky-back2.herokuapp.com/sistema/usuarios`)
             .then(usuario =>
                 usuario.json().then(usuario => this.setState({ usuario }))
             )

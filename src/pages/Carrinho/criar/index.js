@@ -44,7 +44,7 @@ class CriarCarrinho extends Component {
     }
 
     componentDidMount() {
-        fetch(`https://websiteback.herokuapp.com/sistema/pedidos`)
+        fetch(`https://lokky-back2.herokuapp.com/sistema/pedidos`)
             .then(pedido =>
                 pedido.json().then(pedidos => this.setState({ pedidos }))
             )
@@ -137,7 +137,7 @@ class CriarCarrinho extends Component {
         if (nomePedidoPedidos != carrinho.nomePedido)
             return alert('Nome do pedido não existe.')
 
-        fetch("https://websiteback.herokuapp.com/sistema/carrinhos", {
+        fetch("https://lokky-back2.herokuapp.com/sistema/carrinhos", {
             method: "post",
             body: JSON.stringify(carrinho),
             headers: {

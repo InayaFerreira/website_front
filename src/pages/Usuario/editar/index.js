@@ -33,7 +33,7 @@ class EditarUsuario extends Component {
     componentDidMount() {
         const { id } = this.props.match.params;
  
-        fetch(`https://websiteback.herokuapp.com/sistema/usuarios/${id}`)
+        fetch(`https://lokky-back2.herokuapp.com/sistema/usuarios/${id}`)
             .then(data => {
                 data.json().then(data => {
                     if (data.error) {
@@ -143,7 +143,7 @@ class EditarUsuario extends Component {
     handleSubmit = event => {
         const { id } = this.state.usuario;
  
-        fetch(`https://websiteback.herokuapp.com/sistema/usuarios/${id}`, {
+        fetch(`https://lokky-back2.herokuapp.com/sistema/usuarios/${id}`, {
             method: "put",
             body: JSON.stringify(this.state.usuario),
             headers: {

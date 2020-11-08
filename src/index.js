@@ -14,9 +14,9 @@ ReactDOM.render(
                   <h2>clique em um dos botões abaixo</h2>
                 </div>
                 <div id="select">
-                  <a href="https://websiteback.herokuapp.com/sistema/pedidos"><button className="select_button">Produtos</button></a>
-                  <a href="https://websiteback.herokuapp.com/sistema/carrinhos"><button className="select_button">Pedidos</button></a>
-                  <a href="https://websiteback.herokuapp.com/sistema/usuarios"><button className="select_button">Clientes</button></a>
+                  <a href="http://localhost:3000/pedidos"><button className="select_button">Produtos</button></a>
+                  <a href="http://localhost:3000/carrinhos"><button className="select_button">Pedidos</button></a>
+                  <a href="http://localhost:3000/usuarios"><button className="select_button">Clientes</button></a>
                 </div>
     </div>
     <App />
