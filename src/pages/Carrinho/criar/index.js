@@ -19,7 +19,7 @@ class CriarCarrinho extends Component {
         };
     }
 
-    exibeErroNomePedido() {
+    /*exibeErroNomePedido() {
         const { erroNomePedido } = this.state;
  
         if (erroNomePedido) {
@@ -29,7 +29,7 @@ class CriarCarrinho extends Component {
                 </div>
             );
         }
-    }
+    } */ //Tentativa Validate
  
     exibeErro() {
         const { erro } = this.state;
