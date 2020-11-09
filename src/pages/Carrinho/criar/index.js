@@ -69,7 +69,7 @@ class CriarCarrinho extends Component {
                                 type="text"
                                 id="nomePedido"
                                 name="nomePedido"
-                                placeholder="EX: x-burguer"
+                                placeholder="Ex: X-Thomas"
                                 minLength="1"
                                 maxLength="100"
                                 required
