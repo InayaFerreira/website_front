@@ -19,7 +19,7 @@ class CriarCarrinho extends Component {
         };
     }
 
-    /*exibeErroNomePedido() {
+    exibeErroNomePedido() {
         const { erroNomePedido } = this.state;
  
         if (erroNomePedido) {
@@ -29,7 +29,7 @@ class CriarCarrinho extends Component {
                 </div>
             );
         }
-    } */ //Tentativa Validate
+    } 
  
     exibeErro() {
         const { erro } = this.state;
@@ -134,7 +134,7 @@ class CriarCarrinho extends Component {
 
         const nomePedidoPedidos = pedidos.map(pedido => pedido.nomePedido)
 
-        if (nomePedidoPedidos != carrinho.nomePedido)
+        if (nomePedidoPedidos = carrinho.nomePedido)
             return alert('Nome do pedido não existe.')
 
         fetch("https://websiteback.herokuapp.com/sistema/carrinhos", {
