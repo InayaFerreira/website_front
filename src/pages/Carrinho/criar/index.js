@@ -19,18 +19,6 @@ class CriarCarrinho extends Component {
         };
     }
 
-    /*exibeErroNomePedido() {
-        const { erroNomePedido } = this.state;
- 
-        if (erroNomePedido) {
-            return (
-                <div className="alert alert-danger" role="alert">
-                    O nome do seu pedido não existe.
-                </div>
-            );
-        }
-    } */ // Tentativa Validate
- 
     exibeErro() {
         const { erro } = this.state;
  
@@ -131,11 +119,6 @@ class CriarCarrinho extends Component {
  
     handleSubmit = event => {
         const { carrinho, pedidos } = this.state
-
-        const nomePedidoPedidos = pedidos.map(pedido => pedido.nomePedido)
-
-       /* if (nomePedidoPedidos = carrinho.nomePedido)
-            return alert('Nome do pedido não existe.')*/
 
         fetch("https://websiteback.herokuapp.com/sistema/carrinhos", {
             method: "post",
